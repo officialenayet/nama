@@ -1,0 +1,188 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* Islamic Color Scheme */
+:root {
+  --radius: 0.75rem;
+  /* Islamic Green and Gold Theme */
+  --background: oklch(0.98 0.01 120); /* Very light green-tinted white */
+  --foreground: oklch(0.15 0.02 160); /* Dark green-blue */
+  --card: oklch(1 0 0); /* Pure white for cards */
+  --card-foreground: oklch(0.15 0.02 160);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.02 160);
+  --primary: oklch(0.35 0.15 150); /* Islamic green */
+  --primary-foreground: oklch(0.98 0.01 120);
+  --secondary: oklch(0.75 0.12 80); /* Gold accent */
+  --secondary-foreground: oklch(0.15 0.02 160);
+  --muted: oklch(0.95 0.01 120);
+  --muted-foreground: oklch(0.45 0.02 160);
+  --accent: oklch(0.75 0.12 80); /* Gold */
+  --accent-foreground: oklch(0.15 0.02 160);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.9 0.01 120);
+  --input: oklch(0.95 0.01 120);
+  --ring: oklch(0.35 0.15 150);
+  --chart-1: oklch(0.35 0.15 150);
+  --chart-2: oklch(0.75 0.12 80);
+  --chart-3: oklch(0.55 0.08 200);
+  --chart-4: oklch(0.65 0.1 60);
+  --chart-5: oklch(0.45 0.12 300);
+  --sidebar: oklch(0.96 0.01 120);
+  --sidebar-foreground: oklch(0.15 0.02 160);
+  --sidebar-primary: oklch(0.35 0.15 150);
+  --sidebar-primary-foreground: oklch(0.98 0.01 120);
+  --sidebar-accent: oklch(0.75 0.12 80);
+  --sidebar-accent-foreground: oklch(0.15 0.02 160);
+  --sidebar-border: oklch(0.9 0.01 120);
+  --sidebar-ring: oklch(0.35 0.15 150);
+}
+
+.dark {
+  --background: oklch(0.08 0.02 160); /* Dark green-blue */
+  --foreground: oklch(0.95 0.01 120); /* Light green-tinted white */
+  --card: oklch(0.12 0.02 160);
+  --card-foreground: oklch(0.95 0.01 120);
+  --popover: oklch(0.12 0.02 160);
+  --popover-foreground: oklch(0.95 0.01 120);
+  --primary: oklch(0.55 0.15 150); /* Brighter Islamic green for dark mode */
+  --primary-foreground: oklch(0.08 0.02 160);
+  --secondary: oklch(0.65 0.12 80); /* Muted gold */
+  --secondary-foreground: oklch(0.95 0.01 120);
+  --muted: oklch(0.15 0.02 160);
+  --muted-foreground: oklch(0.65 0.01 120);
+  --accent: oklch(0.65 0.12 80);
+  --accent-foreground: oklch(0.08 0.02 160);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(0.2 0.02 160);
+  --input: oklch(0.18 0.02 160);
+  --ring: oklch(0.55 0.15 150);
+  --chart-1: oklch(0.55 0.15 150);
+  --chart-2: oklch(0.65 0.12 80);
+  --chart-3: oklch(0.45 0.08 200);
+  --chart-4: oklch(0.55 0.1 60);
+  --chart-5: oklch(0.35 0.12 300);
+  --sidebar: oklch(0.12 0.02 160);
+  --sidebar-foreground: oklch(0.95 0.01 120);
+  --sidebar-primary: oklch(0.55 0.15 150);
+  --sidebar-primary-foreground: oklch(0.08 0.02 160);
+  --sidebar-accent: oklch(0.65 0.12 80);
+  --sidebar-accent-foreground: oklch(0.95 0.01 120);
+  --sidebar-border: oklch(0.2 0.02 160);
+  --sidebar-ring: oklch(0.55 0.15 150);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Noto Sans Bengali', 'Arial', sans-serif;
+  }
+}
+
+/* Islamic geometric patterns and decorative elements */
+.islamic-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(52, 152, 219, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(46, 125, 50, 0.1) 0%, transparent 50%);
+}
+
+.islamic-border {
+  border-image: linear-gradient(45deg, 
+    oklch(0.35 0.15 150), 
+    oklch(0.75 0.12 80), 
+    oklch(0.35 0.15 150)
+  ) 1;
+}
+
+/* Arabic and Bengali font support */
+.arabic-text {
+  font-family: 'Amiri', 'Times New Roman', serif;
+  direction: rtl;
+  text-align: right;
+}
+
+.bengali-text {
+  font-family: 'Noto Sans Bengali', 'SolaimanLipi', sans-serif;
+}
+
+/* Chat message styling */
+.chat-message {
+  @apply rounded-lg p-4 mb-4 shadow-sm;
+}
+
+.chat-message.user {
+  @apply bg-primary text-primary-foreground ml-8;
+}
+
+.chat-message.assistant {
+  @apply bg-card border mr-8;
+}
+
+/* Loading animation */
+.loading-dots {
+  @apply inline-flex space-x-1;
+}
+
+.loading-dots span {
+  @apply w-2 h-2 bg-primary rounded-full animate-bounce;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+/* Islamic decorative elements */
+.crescent-moon {
+  position: relative;
+}
+
+.crescent-moon::before {
+  content: '☪';
+  font-size: 1.2em;
+  color: oklch(0.75 0.12 80);
+}
+
+/* Smooth transitions */
+.smooth-transition {
+  @apply transition-all duration-300 ease-in-out;
+}
